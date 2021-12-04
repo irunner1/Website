@@ -230,8 +230,8 @@ li, a, button {
     display: block;
     text-align: justify;
     position: absolute;
-    top: 2rem;
-    right: .2rem;
+    top: 3rem;
+    right: -.1rem;
     width: 150px;
     color: rgb(160, 158, 158);
 
@@ -239,8 +239,8 @@ li, a, button {
 .home_details-subtitle {
     background-color: transparent;
     position: absolute;
-    top: 4.3rem;
-    right: .2rem;
+    top: 5.5rem;
+    right: -.2rem;
     width: 150px;
 }
 
@@ -682,5 +682,31 @@ li, a, button {
     a {
         font-size: 22px;
     }
-    
+
+
+
+
+
+    .bottom_nav_links {
+        flex-direction: row;
+    }
+    .center {
+        position: absolute;
+        top: 90px;
+        left: 35vw;
+    }
+    .footer {
+        height: 350px;
+    }
+    .nav_title{
+        position: relative;
+        left: 35vw;
+    }
+    .bottom_nav_links{
+        /* left: -20px; */
+    }
+    .contacts {
+        top: 200px;
+        right: 150px;
+    }
 }
