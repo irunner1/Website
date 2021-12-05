@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@font-face {
+    font-family: GRD;
+    src: url(fonts/GRD45.otf);
+}
+@font-face {
+    font-family: Futura;
+    src: url(fonts/FuturaFuturisLightC.otf);
+}
+@font-face {
+    font-family: Nasir;
+    src: url(fonts/Nasir\ Udin\ -\ Departura-ExtraLight.otf);
+}
+@font-face {
+    font-family: NectoMono;
+    src: url(fonts/NectoMono-Regular.otf);
+}
+
+
 * {
     background-color: #fff;
     box-sizing: border-box;
@@ -7,9 +28,16 @@
 li, a, button {
     font-weight: 300;
     font-size: 20px;
-    color: #ebebeb;
+    color: #504f4f;
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Futura', sans-serif;
+}
+ul {
+    list-style: none;
+}
+p {
+    font-family: 'Futura', sans-serif;
+
 }
 
 /*============================ HEADER =======================*/
@@ -49,12 +77,12 @@ li, a, button {
     font-size: large;
     left: 20px;
 
-    border: 1px solid #fff;
+    border: 1px solid rgb(0, 0, 0);
     padding: 0 10px;
 }
 .txt {
 	font-size: 2.5em;
-	color:white;
+	color: white;
 	-webkit-text-stroke: 1px black;
 	cursor: pointer;
 }
@@ -195,6 +223,8 @@ li, a, button {
     width: 60%;
     height: 600px;
     max-height: 600px;
+    object-fit: cover;
+
 }
 
 .swiper-pagination-bullet {
@@ -240,11 +270,24 @@ li, a, button {
 .instagram-media {
     padding: 25px;
     position: relative;
-    margin-left: 0;
-    margin-right: 0;
+    /* margin-left: 0;
+    margin-right: 0; */
+    left: 20%;
+}
+
+.article p {
+    padding: 10px;
+}
+
+@media all and (max-width: 1000px) {
+    .header {
+        justify-content: end;
+    }
+
 }
 
 @media all and (max-width: 800px) {
+    
     body.lock {
         overflow: hidden;
     }
@@ -351,5 +394,49 @@ li, a, button {
         left: 0;
         padding: 10px;
     }
+    .instagram-media {
+        left: 0;
+        width: 200px;
+    }
+}
 
+@media all and (max-width: 670px) {
+    .outline {
+        top: 10px;
+        left: 5px;
+    }
+    .outline.active {
+        z-index: 4;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 350px;
+        margin: 0;
+    }
+    .nav_title{
+        position: relative;
+        width: 40px;
+        left: 40%;
+        margin-right: -50%;
+    }
+    .bottom_nav_links {
+        position: absolute;
+        bottom: 280px;
+        left: 40%;
+        top: 35px;
+        margin-right: -50%;
+    }
+    .center {
+        position: absolute;
+        top: 120px;
+        left: 35%;
+        margin-right: -50%;
+    }
+    .contacts {
+        bottom: 80px;
+        left: 30%;
+        margin-right: -50%;
+        width: 200px;
+    }
 }

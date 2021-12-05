@@ -3,6 +3,10 @@ $(document).ready(function() {
         $('.header_burger,.header_menu,.outline').toggleClass('active');
         $('body').toggleClass('lock');
     });
+    $('.b').click(function(event){
+        $('.header_burger,.header_menu,.outline').removeClass('active');
+        $('body').removeClass('lock');
+    });
 });
 
 var swiper = new Swiper(".mySwiper", {

@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@font-face {
+    font-family: GRD;
+    src: url(fonts/GRD45.otf);
+}
+@font-face {
+    font-family: Futura;
+    src: url(fonts/FuturaFuturisLightC.otf);
+}
+@font-face {
+    font-family: Nasir;
+    src: url(fonts/Nasir\ Udin\ -\ Departura-ExtraLight.otf);
+}
+@font-face {
+    font-family: NectoMono;
+    src: url(fonts/NectoMono-Regular.otf);
+}
+
 * {
     background-color: #fff;
 
@@ -9,9 +29,9 @@
 li, a, button {
     font-weight: 300;
     font-size: 20px;
-    color: #ebebeb;
+    color: #cccccc;
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Futura', sans-serif;
 }
 
 /* .wrapper {
@@ -232,16 +252,17 @@ li, a, button {
     text-align: justify;
     position: absolute;
     top: 3rem;
-    right: -.1rem;
-    width: 150px;
+    right: -.3rem;
+    width: 190px;
     color: rgb(160, 158, 158);
+    font-family: 'Lato', sans-serif;
 
 }
 .home_details-subtitle {
     background-color: transparent;
     position: absolute;
     top: 5.5rem;
-    right: -.2rem;
+    left: -8rem;
     width: 150px;
 }
 
@@ -254,6 +275,9 @@ li, a, button {
     color: rgb(255, 255, 255);
     padding: 10px 0 0 0;
     font-size: 25px;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: 'GRS', sans-serif;
+    
 }
 .home_data {
     background-color: transparent;
@@ -271,17 +295,9 @@ li, a, button {
     margin-right: 0;
     margin-left: 0;
 }
-/* .home_title {
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 109%;
-    margin-bottom: 15px;
-    
-} */
 
 .home_buttons {
     display: flex;
-    /* justify-content: space-between; */
     float: right;
 }
 
@@ -298,6 +314,7 @@ li, a, button {
     height: 700px;
     max-height: 600px;
     filter: brightness(50%);
+    object-fit: cover;
 }
 
 .swiper-pagination-bullet {
@@ -348,7 +365,6 @@ li, a, button {
     transition: .3s;
     position: relative;
     top: 30px;
-    /* left: 7rem; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -408,12 +424,15 @@ li, a, button {
     position: relative;
     left: 15rem;
 	width: 60%;
+    /* font-family: 'GRS', sans-serif; */
 }
 .tabs li {
     list-style: none;
 	width: 33.33%;
 	float: left;
 	text-align: center;
+    font-family: 'GRS', sans-serif;
+
 }
 .tabs li a {
 	font-size: 20px;
@@ -441,7 +460,7 @@ li, a, button {
 	color: inherit;
 }
 
-.article { /*??????????????????????????????????????*/
+.article {
 	border-top: 1px solid #e8e8e8;
 	padding-top: 40px;
 	margin-top: 40px;
@@ -488,15 +507,20 @@ li, a, button {
 }
 .article-img_description {
     padding: 13px 0 0 0;
-	color: #bebebe;
+	color: #a3a3a3;
 	font-size: 14px;
 	line-height: 22px;
+    font-family: 'Nasir', sans-serif;
+
 }
 .article-excerpt {  
 	width: 45%;
 	float: right;
-
 }
+.details { 
+    font-family: 'Futura', sans-serif;
+}
+
 .article-excerpt h2 {
 	padding: 15px 0 13px 0;
 }
@@ -505,6 +529,8 @@ li, a, button {
 	color: #666;
 	font-size: 14px;
 	line-height: 22px;
+    font-family: 'NectoMono', sans-serif;
+
 }
 
 /*================== RESPONSIBLE =========================*/
@@ -521,18 +547,18 @@ li, a, button {
 
     .swiper {
         width: 100%;
-        height: 500px;
+        /* height: 600px; */
     }
     
     .swiper-slide img {
         width: 100%;
-        height: auto;
+        /* height: auto; */
     }
 
     .home_subtitle {
         font-size: 1rem;
-        position: relative;
-        bottom: 200px;
+        /* position: relative;
+        bottom: 200px; */
     }
 
     .tabs {
@@ -549,6 +575,11 @@ li, a, button {
     
     .text .article-excerpt p {
         font-size: 12;
+    }
+
+    .home_data {
+        left: 0;
+        padding: 5px;
     }
 }
 
@@ -582,8 +613,15 @@ li, a, button {
         width: 100%;
         height: 350px;
         /* object-fit: 400px; */
+        object-fit: cover;
     }
-    
+    .home_subtitle {
+        font-size: .7rem;
+        position: relative;
+        bottom: 200px;
+    }
+
+
     body.lock {
         overflow: hidden;
     }
@@ -676,7 +714,9 @@ li, a, button {
     a {
         font-size: 22px;
     }
-
+    .tabs li a {
+        font-size: 14px;
+    }
 
     .footer {
         flex-direction: column;
@@ -706,6 +746,7 @@ li, a, button {
         bottom: 80px;
         left: 30%;
         margin-right: -50%;
+        width: 200px;
     }
 }
 

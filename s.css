@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Titillium+Web&display=swap');
+@font-face {
+    font-family: GRD;
+    src: url(fonts/GRD45.otf);
+}
+@font-face {
+    font-family: Futura;
+    src: url(fonts/FuturaFuturisLightC.otf);
+}
+@font-face {
+    font-family: Nasir;
+    src: url(fonts/Nasir\ Udin\ -\ Departura-ExtraLight.otf);
+}
+@font-face {
+    font-family: NectoMono;
+    src: url(fonts/NectoMono-Regular.otf);
+}
+
 * {
     box-sizing: border-box;
     margin: 10px;
@@ -7,9 +27,9 @@ li, a, button {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 20px;
-    color: #ebebeb;
+    color: #aaaaaa;
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Futura', sans-serif;
 }
 
 /*============================ HEADER =======================*/
@@ -55,7 +75,7 @@ li, a, button {
 
 .txt {
 	font-size: 2em;
-	padding-top: 5px;
+	padding-top: 2px;
 	color:white;
 	-webkit-text-stroke: 1px black;
 	cursor: pointer;
@@ -116,6 +136,8 @@ li, a, button {
     min-width: 30%;
     height: auto;
     border-radius: 5px;
+    object-fit: cover;
+
 }
 /* .right_block img:hover {
 	-webkit-backface-visibility: hidden;
@@ -139,13 +161,18 @@ li, a, button {
     font-size: 25px;
     font-style: bold;
     text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+
 }
 
 .right_block_subtitle {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
 }
 
-.media{
+.media {
     display: flex;
     flex-direction: row;
     height: 350px;
@@ -154,6 +181,8 @@ li, a, button {
     width: 50%;
     display: flex;
     flex-direction: column;
+    font-size: .88vw;
+    font-family: 'NectoMono', sans-serif;
 }
 .block {
     position: relative;
@@ -177,21 +206,25 @@ li, a, button {
 /*======================== Responsible ============================*/
 
 @media all and (max-width: 1100px) {
-    .right_block {
-        margin-top: 15px;
-        height: 700px;
+    .media_text {
+        font-size: 1vw;
     }
 }
 
 @media all and (max-width: 950px) {
-
+    .nav_links li {
+        padding: 0;
+    }
     .header {
         justify-content: end;
-
+        margin: 0;
     }
     .header_menu {
         position: relative;
-        left: 100px;
+        left: 120px;
+    }
+    .outline {
+        left: 0;
     }
 }
 
@@ -210,12 +243,16 @@ li, a, button {
     }
     .right_block {
         width: 100%;
-        height: 800px;
+        /* height: 800px; */
     }
 	.header_menu {
 		position: relative;
 		left: 20%;
 	}
+    .media_text {
+        font-size: 1.5vw;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -311,15 +348,12 @@ li, a, button {
     }
 
     .nav_links li {
-
         display: block;
         margin: 0 0 30px 0;
     }
     a {
         font-size: 22px;
     }
-
-
 
 	.outline {
 		top: 10px;
@@ -363,7 +397,7 @@ li, a, button {
 	}
     .right_block {
         margin-top: 15px;
-        height: 800px;
+        height: 900px;
     }
     .media {
         flex-direction: column;
@@ -376,11 +410,21 @@ li, a, button {
     .media_text {
         width: 100%;
         padding: 10px;
+        font-size: 2.8vw;
     }
     .block {
         padding: 10px;
     }
     * {
         margin: 0;
+    }
+}
+@media screen and (max-width: 408px) {
+    .right_block {
+        margin-top: 15px;
+        height: 800px;
+    }
+    .media_text {
+        font-size: 4vw;
     }
 }
