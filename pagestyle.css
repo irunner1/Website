@@ -278,6 +278,10 @@ p {
 .article p {
     padding: 10px;
 }
+.article ul {
+    position: relative;
+    left: 10px;
+}
 
 @media all and (max-width: 1000px) {
     .header {

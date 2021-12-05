@@ -530,7 +530,10 @@ li, a, button {
 	font-size: 14px;
 	line-height: 22px;
     font-family: 'NectoMono', sans-serif;
-
+}
+.article ul {
+    position: relative;
+    left: 2px;
 }
 
 /*================== RESPONSIBLE =========================*/
@@ -722,31 +725,36 @@ li, a, button {
         flex-direction: column;
         height: 350px;
         margin: 0;
+        align-items: center;
+        position: relative;
+    }
+    .bottom_menu {
+        position: relative;
+        left: -50px;
     }
     .nav_title{
         position: relative;
         width: 40px;
-        left: 40%;
-        margin-right: -50%;
     }
     .bottom_nav_links {
-        position: absolute;
-        bottom: 280px;
-        left: 40%;
-        top: 35px;
-        margin-right: -50%;
+        position: relative;
+        padding: 0;
     }
     .center {
-        position: absolute;
-        top: 120px;
-        left: 35%;
-        margin-right: -50%;
+        position: relative;
+        left: 0;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    .footer_subtitle {
+        left: 30px;
+        padding-bottom: 30px;
     }
     .contacts {
         bottom: 80px;
-        left: 30%;
-        margin-right: -50%;
-        width: 200px;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 10px;
     }
 }
 
