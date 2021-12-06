@@ -758,7 +758,7 @@ li, a, button {
     }
 }
 
-@media all and (max-width: 350px) {
+/* @media all and (max-width: 350px) {
     .nav_title{
         left: 20%;
     }
@@ -773,4 +773,4 @@ li, a, button {
     .contacts {
         left: 0;
     }
-}
+} */
