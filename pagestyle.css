@@ -433,8 +433,8 @@ th {
 }
 
 .form button {
-	background-color: #59a0b6;
-	border: 2px solid #59a0b6;
+	background-color: #a0a0a0;
+	border: 2px solid #ffffff;
 	border-radius: 8px;
 	color: #fff;
 	display: block;
@@ -448,7 +448,7 @@ th {
 }
 
 .form button:hover {
-    background-color: #4e8da0;
+    background-color: #666666;
 }
 
 
