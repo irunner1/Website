@@ -152,7 +152,7 @@ li, a, button {
     background: #202020;
     color: #fff;
     width: 200px;
-    
+
     display: flex;
     position: relative;
     left: 40px;
@@ -164,12 +164,11 @@ li, a, button {
     color: #fff;
     position: relative;
     font-size: 30px;
+    padding-bottom: 10px;
 }
 .footer_subtitle {
     background: #202020;
     color: #fff;
-    position: relative;
-    top: 20px;
 }
 /* .copyright {
     background-color: #202020;
@@ -193,11 +192,7 @@ li, a, button {
     font-size: 20px;
     padding-left: 20px;
 }
-.contacts_email {
-    background: #202020;
-    color: rgb(117, 117, 117);
-    padding-top: 10px;
-}
+
 /*======================== HOME ======================= */
 
 .main {
@@ -741,36 +736,23 @@ li, a, button {
         padding: 0;
     }
     .center {
+        top: 5px;
+
         position: relative;
         left: 0;
         padding-bottom: 20px;
         align-items: center;
+        width: 10vw;
     }
     .footer_subtitle {
         left: 30px;
         padding-bottom: 30px;
     }
     .contacts {
-        bottom: 80px;
+        bottom: 50px;
         margin-right: 0;
         margin-left: 0;
         padding: 10px;
+        left: -10px;
     }
 }
-
-/* @media all and (max-width: 350px) {
-    .nav_title{
-        left: 20%;
-    }
-    .bottom_nav_links {
-        left: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .center {
-        left: 10%;
-    }
-    .contacts {
-        left: 0;
-    }
-} */

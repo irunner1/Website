@@ -139,6 +139,7 @@ p {
     width: 200px;
     display: flex;
     position: relative;
+    left: 40px;
     bottom: 20px;
     flex-direction: column;
 }
@@ -147,18 +148,16 @@ p {
     color: #fff;
     position: relative;
     font-size: 30px;
+    padding-bottom: 10px;
 }
 .footer_subtitle {
     background: #202020;
     color: #fff;
-    position: relative;
-    top: 20px;
 }
 .contacts {
     background: #202020;
-    color: #fff;
-    width: 200px;
     position: relative;
+    color: #fff;
     display: flex;
     float: right;
     flex-direction: column;
@@ -598,30 +597,39 @@ th {
         flex-direction: column;
         height: 350px;
         margin: 0;
+        align-items: center;
+        position: relative;
+    }
+    .bottom_menu {
+        position: relative;
+        left: -50px;
     }
     .nav_title{
         position: relative;
         width: 40px;
-        left: 40%;
-        margin-right: -50%;
     }
     .bottom_nav_links {
-        position: absolute;
-        bottom: 280px;
-        left: 40%;
-        top: 35px;
-        margin-right: -50%;
+        position: relative;
+        padding: 0;
     }
     .center {
-        position: absolute;
-        top: 120px;
-        left: 35%;
-        margin-right: -50%;
+        position: relative;
+        left: 0;
+        padding-bottom: 20px;
+        align-items: center;
+        width: 10vw;
+        top: 5px;
+    }
+    .footer_subtitle {
+        left: 30px;
+        padding-bottom: 30px;
     }
     .contacts {
-        bottom: 80px;
-        left: 30%;
-        margin-right: -50%;
-        width: 200px;
+        bottom: 50px;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 10px;
+        left: -10px;
     }
+    
 }

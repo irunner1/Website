@@ -425,6 +425,11 @@ li, a, button {
         height: 800px;
     }
     .media_text {
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 350px) {
+    .media_text {
         font-size: 4vw;
     }
 }
