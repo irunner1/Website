@@ -34,12 +34,6 @@ li, a, button {
     font-family: 'Futura', sans-serif;
 }
 
-/* .wrapper {
-    display: flex;
-    flex-flow: row wrap; 
-    text-align: center;
-} */
-
 .wrapper > * {
     padding: 10px;
     flex: 1 100%;
@@ -60,7 +54,6 @@ li, a, button {
     padding: 30px 10%;
     height: 120px;
     z-index: 50;
-    /* background-color: #3A3C41; */
 }
 .header_menu{
     font-size: 24px;
@@ -170,13 +163,6 @@ li, a, button {
     background: #202020;
     color: #fff;
 }
-/* .copyright {
-    background-color: #202020;
-    color: rgb(128, 128, 128);
-    position: absolute;
-    left: 0;
-    top: 130px;
-} */
 .contacts {
     background: #202020;
     color: #fff;
@@ -191,7 +177,12 @@ li, a, button {
     color: #fff;
     font-size: 20px;
     padding-left: 20px;
+    transition: all 0.3s ease 0s;
 }
+.contacts_title:hover {
+    color: rgb(197, 196, 196);
+}
+
 
 /*======================== HOME ======================= */
 
@@ -270,7 +261,6 @@ li, a, button {
     color: rgb(255, 255, 255);
     padding: 10px 0 0 0;
     font-size: 25px;
-    /* font-family: 'Roboto Condensed', sans-serif; */
     font-family: 'GRS', sans-serif;
     
 }
@@ -419,7 +409,7 @@ li, a, button {
     position: relative;
     left: 15rem;
 	width: 60%;
-    /* font-family: 'GRS', sans-serif; */
+    font-family: 'GRS', sans-serif;
 }
 .tabs li {
     list-style: none;
@@ -545,18 +535,13 @@ li, a, button {
 
     .swiper {
         width: 100%;
-        /* height: 600px; */
     }
-    
     .swiper-slide img {
         width: 100%;
-        /* height: auto; */
     }
 
     .home_subtitle {
         font-size: 1rem;
-        /* position: relative;
-        bottom: 200px; */
     }
 
     .tabs {
@@ -610,7 +595,6 @@ li, a, button {
     .swiper-slide img {
         width: 100%;
         height: 350px;
-        /* object-fit: 400px; */
         object-fit: cover;
     }
     .home_subtitle {
