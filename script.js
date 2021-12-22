@@ -68,9 +68,9 @@ function checkInputs() {
 	}
 
 	if(emailValue === '') {
-		setErrorFor(email, 'Email cannot be blank');
+		setErrorFor(email, 'Email не должен быть пуст');
 	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Not a valid email');
+		setErrorFor(email, 'Введите правильный email');
 	} else {
 		setSuccessFor(email);
 	}
